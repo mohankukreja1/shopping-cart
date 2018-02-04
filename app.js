@@ -6,6 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var exphbs  = require('express-handlebars');
 
+const db=require('./db/model');
+
 var index = require('./routes/index');
 
 

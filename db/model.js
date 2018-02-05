@@ -27,7 +27,40 @@ const products=db.define('products',{
 
 })
 
-db.sync({force:true});
+db.sync({force:true}).then(()=>{
+    products.create({
+        imagePath:"https://i.ytimg.com/vi/jl2xNWeujZs/maxresdefault.jpg",
+        title:"GTA 5",
+        description:"awesome game",
+        price:10
+    }).then().catch((err)=>{
+        console.log(err)
+    });
+    products.create({
+        imagePath:"https://i.ytimg.com/vi/jl2xNWeujZs/maxresdefault.jpg",
+        title:"GTA 5",
+        description:"awesome game",
+        price:10
+    }).then().catch((err)=>{
+        console.log(err)
+    });
+    products.create({
+        imagePath:"https://i.ytimg.com/vi/jl2xNWeujZs/maxresdefault.jpg",
+        title:"GTA 5",
+        description:"awesome game",
+        price:10
+    }).then().catch((err)=>{
+        console.log(err)
+    });
+    products.create({
+        imagePath:"https://i.ytimg.com/vi/jl2xNWeujZs/maxresdefault.jpg",
+        title:"GTA 5",
+        description:"awesome game",
+        price:10
+    }).then().catch((err)=>{
+        console.log(err)
+    });
+});
 
 
 module.exports={

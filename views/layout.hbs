@@ -43,91 +43,34 @@
   <hr>
 
   <div class="container">
+
+      {{#each temp as |temp|}}
       <div class="row">
-          <div class="col-4">
-              <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="https://i.ytimg.com/vi/jl2xNWeujZs/maxresdefault.jpg" alt="Card image cap">
+         {{#each temp as |array|}}
+              <div class="col-4">
+                  <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src={{array.imagePath}}>
 
-                  <div class="card-body">
-                      <h5 class="card-title">Gta 5</h5>
+                      <div class="card-body">
+                          <h5 class="card-title">{{array.title}}</h5>
 
-                      <p class="pull-right"><b>$12</b></p>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <p class="pull-right"><b>{{array.price}}</b></p>
+                          <p class="card-text">{{array.description}}</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
                   </div>
+
               </div>
-          </div>
-          <div class="col-4">
-              <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="https://i.ytimg.com/vi/jl2xNWeujZs/maxresdefault.jpg" alt="Card image cap">
 
-                  <div class="card-body">
-                      <h5 class="card-title">Gta 5</h5>
+         {{/each}}
 
-                      <p class="pull-right"><b>$12</b></p>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-4">
-              <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="https://i.ytimg.com/vi/jl2xNWeujZs/maxresdefault.jpg" alt="Card image cap">
 
-                  <div class="card-body">
-                      <h5 class="card-title">Gta 5</h5>
 
-                      <p class="pull-right"><b>$12</b></p>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-              </div>
-          </div>
+
       </div>
-      <br>
-      <br>
-
-      <div class="row">
-          <div class="col-4">
-              <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="https://i.ytimg.com/vi/jl2xNWeujZs/maxresdefault.jpg" alt="Card image cap">
-
-                  <div class="card-body">
-                      <h5 class="card-title">Gta 5</h5>
-
-                      <p class="pull-right"><b>$12</b></p>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-4">
-              <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="https://i.ytimg.com/vi/jl2xNWeujZs/maxresdefault.jpg" alt="Card image cap">
-
-                  <div class="card-body">
-                      <h5 class="card-title">Gta 5</h5>
-
-                      <p class="pull-right"><b>$12</b></p>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-              </div>
-          </div>
-          <div class="col-4">
-              <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="https://i.ytimg.com/vi/jl2xNWeujZs/maxresdefault.jpg" alt="Card image cap">
-
-                  <div class="card-body">
-                      <h5 class="card-title">Gta 5</h5>
-
-                      <p class="pull-right"><b>$12</b></p>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-              </div>
-          </div>
-      </div>
+          <br>
+          <hr>
+      {{/each}}
   </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>{{title}}</title>
+      <meta charset="UTF-8">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
       <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -54,9 +55,9 @@
                       <div class="card-body">
                           <h5 class="card-title">{{array.title}}</h5>
 
-                          <p class="pull-right"><b>{{array.price}}</b></p>
+                          <p class="pull-right"><b>${{array.price}}</b></p>
                           <p class="card-text">{{array.description}}</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <a href="#" class="btn btn-primary">Add To Shopping Cart</a>
                       </div>
                   </div>
 
